@@ -1,0 +1,16 @@
+.map-and-card {
+  display: flex;
+  gap: 2rem; /* space between map and card */
+  align-items: flex-start; /* align top edges */
+  flex-wrap: wrap; /* allows wrapping on small screens */
+}
+
+/* Optional: control the size of the map and card */
+.map-and-card > div:first-child {
+  flex: 1 1 600px; /* map takes up at least 600px */
+  min-width: 300px; /* responsive */
+}
+
+.map-and-card > .weather-card {
+  flex: 0 0 350px; /* card has fixed width */
+}
